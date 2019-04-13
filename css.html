@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+<!-- CSS套用順序
+    important > 行內 >頁面內 > 外部檔案
+-->
+
+<!-- 寫在行內 -->
+    <style>
+        h2{
+            color:green;
+        }    
+
+        .blue{
+            color:blue !important;
+        }
+        .big{
+            font-size: 50px;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .bold{
+            color:orange !important;
+            font-weight: bold;
+        }
+        *{
+            font-family: 'Dokdo','微軟正黑體';
+        }
+        .center{
+            text-align: center;
+        }
+        .blue.center{
+            text-decoration: line-through;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+        }
+        /* px: 水平距離 垂直距離 模糊距離 顏色 */
+        .shadow{
+            text-shadow: 5px 5px 5px red;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:active{
+            color: yellowgreen;
+        }
+        a:hover{
+            color: cadetblue;
+        }
+        p:hover{
+            color:black;
+            text-shadow: 5px 5px 5px black;
+        }
+    </style>
+</head>
+
+<!-- 第一種寫在body裡(頁面內的) -->
+<body>
+    
+    <h1 style="color:aquamarine">今天上CSS</h1>
+    <h2>今天學CSS</h2>
+    <h2 class="blue big">今天上CSS</h2>
+    <h3 class="big italic">ihflhilsh</h3>
+    <p class="bold big">今天學CSS</p>
+    <p class="bold big blue center shadow">今天學CSS</p>
+    <a href="http://www.google.com">Google</a>
+</body>
+</html>
